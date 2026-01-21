@@ -13,7 +13,7 @@ import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
 @Entity
-@Table(name = "mock_api_response", schema = "dbo", uniqueConstraints = @UniqueConstraint(columnNames = { "username",
+@Table(name = "mock_api_response", schema = "devtools", uniqueConstraints = @UniqueConstraint(columnNames = { "username",
 		"token" }))
 
 @Data

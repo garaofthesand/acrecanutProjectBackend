@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "customer", schema = "dbo")
+@Table(name = "customer", schema = "devtools")
 @Data
 public class Customer {
 

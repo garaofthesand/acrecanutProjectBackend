@@ -3,6 +3,10 @@ package com.tridentSoft.devtools.service;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.tridentSoft.devtools.domain.Customer;
@@ -43,6 +47,14 @@ public class AuthService {
 		if (!request.getPassword().equals(customer.getPassword())) {
 		    return new LoginResponse(1, "Invalid email or password");
 		}
+		
+		
+		
+	
+		         
+		 
+		 
+		 
 
 
 		return new LoginResponse(0, "Login successful", customer.getCustomerId(), customer.getCustomerCode(),
